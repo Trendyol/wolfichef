@@ -15,7 +15,11 @@ type AppConfig struct {
 func (cfg *AppConfig) Setup() {
 	err := cleanenv.ReadConfig("configs/config.yml", cfg)
 	if err != nil {
-		log.Fatalf("error while reading the config: %+v\n", err)
+		log.Printf("error while reading the config from file: %+v\n", err)
+	}
+	err = cleanenv.ReadEnv(cfg)
+	if err != nil {
+		log.Printf("error while reading the config from env: %+v\n", err)
 	}
 	cfg.Server.Setup()
 }

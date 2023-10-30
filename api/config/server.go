@@ -13,8 +13,8 @@ import (
 
 type ServerConfig struct {
 	*fiber.App
-	Host string `yaml:"Host" envDefault:"127.0.0.1"`
-	Port string `yaml:"Port" envDefault:"8000"`
+	Host string `yaml:"Host" env:"HOST" env-default:"127.0.0.1"`
+	Port string `yaml:"Port" env:"PORT" env-default:"8000"`
 }
 
 func (s *ServerConfig) Setup() {
