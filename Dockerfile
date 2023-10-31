@@ -1,5 +1,9 @@
 FROM cgr.dev/chainguard/go:latest-dev AS builder
 
+LABEL org.opencontainers.image.source=https://github.com/trendyol/wolfichef
+LABEL org.opencontainers.image.description="Container image of WolfiChef Backend"
+LABEL org.opencontainers.image.licenses=MIT
+
 WORKDIR /wolfichef
 ARG commitHash="null"
 ENV GO111MODULE=on \
