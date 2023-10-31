@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  backend:
+    container_name: wolfichef-backend
+    image: ghcr.io/trendyol/wolfichef:latest
+    ports:
+      - 8000:8000
+    environment:
+      APP_ID: ''
+      DEPLOY_TOKEN: ''
+      DEPLOY_USER: ''
+      DOMAIN: ''
+      HOST: 0.0.0.0
+      REDIRECT_URI: ''
+      SECRET_KEY: ''
+      
+  frontend:
+    container_name: wolfichef-frontend
+    image: ghcr.io/trendyol/wolfichef-fe:latest
+    ports:
+      - 8080:8000
