@@ -8,7 +8,7 @@ type Secrets struct {
 	AccessToken     string
 	APIKey          string
 }
-STRIPE_API_KEY = "dummy_api_key"
+SLACK_API_KEY = "xoxb-5sakjdhds-sdjgjvdfg-kgjkdfgfg"
 // GetSecrets returns the Secrets struct with secret values
 func GetSecrets() Secrets {
 	return Secrets{
