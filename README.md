@@ -1,3 +1,5 @@
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Trendyol/wolfichef/badge)](https://scorecard.dev/viewer/?uri=github.com/Trendyol/wolfichef)
 # WolfiChef
 
 <img src="assets/logo.jpg" width="250" height="250" alt="WolfiChef">
